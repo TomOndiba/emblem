@@ -8304,7 +8304,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 26, ../sass/main.scss */
+  /* line 25, ../sass/main.scss */
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 768px;
   }
