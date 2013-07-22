@@ -26,16 +26,18 @@
 	 {{#each mainNav}}   
 	 	<li><a class="link" href="<?php echo base_url('{{language}}/{{this.title}}') ?>">{{this.title}}</a></li>
 	 {{/each}}
-	</ul>
-	
-	<ul class='subNav'>
+	</ul>	
+</div>
+
+
+<div class='subNav'>
+	<div class='container hidden-phone'>
 	  {{#each subNav}}  
-	  	<div data-page='{{this.name}}' class='sub'>
+	  	<ul data-page='{{this.name}}' class='sub'>
 		  	{{#each this.pages}}
-		  		<li><a class="link" href="<?php echo base_url('{{language}}/{{this.title}}') ?>">{{this.title}}</a></li>
+		  		<li><a class="link" href="<?php echo base_url('{{language}}/{{this.title}}') ?>">{{menuText this}}</a></li>
 		  	{{/each}}
-	  	</div> 	 	
+	  	</ul> 	 	
 	  {{/each}}
-	</ul>
-	
+	</div>
 </div>

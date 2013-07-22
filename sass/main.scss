@@ -6,12 +6,28 @@
 
 .mainNav{
 	list-style: none;
-	background: transparent url(../img/logo.png) no-repeat center center;
+	background: transparent url(../img/logoSmall.png) no-repeat center center;
+	height:70px;
+}
+
+.subNav{
+	text-align: center;
+	list-style: none;
+	background: white;
+	@include box-shadow(#c1c1c1 0 0 4px); 
+	padding:10px 0;
 }
 
 .mainNav li{
 	display: inline-block;
 	margin-right: 12px;
+	top: 26px;
+	position: relative;
+}
+
+.subNav li{
+	margin-right: 12px;
+	display: inline-block;
 }
 
 .mainNav li a{
@@ -19,6 +35,30 @@
 	text-transform: uppercase;
 }
 
+.subNav li a{
+	color:#000;
+}
+
+a:hover{
+	color:#b4b5e3!important;
+	text-decoration: none;
+}
+
+.vCenter{
+	display: inline-table;
+	height:100%;
+}
+
+.vCenterKid{
+	display: table-cell;
+	vertical-align: middle;
+	height:100%;
+	width:100%;
+}
+
+ul{
+	margin:0;
+}
 
 //bootsrap fixes
 @media (max-width: 979px) and (min-width: 768px){
@@ -26,3 +66,4 @@
 	width: 768px;
 	}
 }
+

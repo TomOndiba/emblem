@@ -33,7 +33,9 @@ define(['jquery', 'backbone', 'handlebars'], function($, Backbone) {
 	    	self.template = Handlebars.compile(myApp.pages.menu.template);
 	    	self.subtemplate = Handlebars.compile(myApp.pages.menu.subtemplate);
 	    	//register menu controls
-	    	Handlebars.registerHelper('language', function() { return myApp.page.lang });	    					
+	    	Handlebars.registerHelper('language', function() { return myApp.page.lang });	   
+	    	
+	    	 					
 	    }
 	    
 	});

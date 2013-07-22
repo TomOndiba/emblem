@@ -72,6 +72,11 @@ define(['jquery', 'backbone', 'handlebars', 'royalslider', 'imgLiquid', 'backstr
 				var self = this;		
 				
 				_.bindAll(this, 'render');
+				
+				Handlebars.registerHelper('menuText', function(items) {
+				  var text = self.lang == 'cz' ? items.text.cz : items.text.en;
+				  return new Handlebars.SafeString(text);  
+				});	
 						
 				//handle resize
 				$(window).on('resize', function(){

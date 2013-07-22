@@ -41,7 +41,14 @@ define(['jquery', 'backbone'], function($, Backbone) {
 	    },
 	    	    
 	    initialize: function(){	    	
-	    	var self = this;		    
+	    	var self = this;		
+	    	
+	    	$('.slideShow').backstretch([
+			  'path/to/image.jpg',
+			  'path/to/image2.jpg',
+			  'path/to/image3.jpg'
+			]);
+	    	    
 	    }
 	
 	});		
