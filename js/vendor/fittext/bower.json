@@ -1,0 +1,9 @@
+{
+  "name": "fittext",
+  "version": "0.0.0",
+  "commit": "67063546df8456abb5bf0b9d6b930b4be4e93894",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adactio/FitText.js.git"
+  }
+}

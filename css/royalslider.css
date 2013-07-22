@@ -1,0 +1,301 @@
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+/* line 3, ../sass/royalslider.scss */
+.royalSlider {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  direction: ltr;
+}
+
+/* line 9, ../sass/royalslider.scss */
+.royalSlider > * {
+  float: left;
+}
+
+/* line 14, ../sass/royalslider.scss */
+.rsWebkit3d .rsSlide {
+  -webkit-transform: translateZ(0);
+}
+
+/* line 28, ../sass/royalslider.scss */
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 33, ../sass/royalslider.scss */
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none;
+}
+
+/* line 36, ../sass/royalslider.scss */
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 44, ../sass/royalslider.scss */
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 53, ../sass/royalslider.scss */
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 59, ../sass/royalslider.scss */
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 67, ../sass/royalslider.scss */
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer;
+}
+
+/* line 71, ../sass/royalslider.scss */
+.rsThumb {
+  float: left;
+  position: relative;
+}
+
+/* line 79, ../sass/royalslider.scss */
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+/* line 86, ../sass/royalslider.scss */
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  -moz-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  -o-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+/* line 96, ../sass/royalslider.scss */
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+/* Fullscreen options, very important ^^ */
+/* line 103, ../sass/royalslider.scss */
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+/* line 116, ../sass/royalslider.scss */
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  display: none;
+}
+
+/* line 125, ../sass/royalslider.scss */
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 137, ../sass/royalslider.scss */
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto;
+}
+
+/* line 141, ../sass/royalslider.scss */
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 147, ../sass/royalslider.scss */
+.rsPreloader {
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 152, ../sass/royalslider.scss */
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 157, ../sass/royalslider.scss */
+.rsNavItem {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 161, ../sass/royalslider.scss */
+.rsThumbs {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  z-index: 22;
+}
+
+/* line 168, ../sass/royalslider.scss */
+.rsTabs {
+  float: left;
+  background: none !important;
+}
+
+/* line 173, ../sass/royalslider.scss */
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 179, ../sass/royalslider.scss */
+.rsVideoContainer {
+  /*left: 0;
+  top: 0;
+  position: absolute;*/
+  /*width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;*/
+  width: auto;
+  height: auto;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 194, ../sass/royalslider.scss */
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s;
+}
+
+/* line 202, ../sass/royalslider.scss */
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1;
+}
+
+/* line 208, ../sass/royalslider.scss */
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ios controls over video bug, shifting video */
+/* line 219, ../sass/royalslider.scss */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 44px;
+}
+
+/* line 226, ../sass/royalslider.scss */
+.rsABlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15;
+}
+
+/* line 234, ../sass/royalslider.scss */
+img.rsImg {
+  max-width: none;
+}
+
+/* line 238, ../sass/royalslider.scss */
+.grab-cursor {
+  cursor: url(grab.png) 8 8, move;
+}
+
+/* line 242, ../sass/royalslider.scss */
+.grabbing-cursor {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* line 246, ../sass/royalslider.scss */
+.rsNoDrag {
+  cursor: auto;
+}
+
+/* line 250, ../sass/royalslider.scss */
+.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url(blank.gif);
+}

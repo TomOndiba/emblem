@@ -1,0 +1,28 @@
+@import "compass/css3";
+@import "sass-bootstrap/bootstrap";
+@import "mixins";
+@import "sass-bootstrap/responsive";
+@import "variables";
+
+.mainNav{
+	list-style: none;
+	background: transparent url(../img/logo.png) no-repeat center center;
+}
+
+.mainNav li{
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.mainNav li a{
+	color: #000;
+	text-transform: uppercase;
+}
+
+
+//bootsrap fixes
+@media (max-width: 979px) and (min-width: 768px){
+	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width: 768px;
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "jquery-nicescroll",
+  "version": "0.0.0",
+  "commit": "8eaa0c0a19c83b12fa31959b0a4aa134c263327f",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/inuyaksa/jquery.nicescroll.git"
+  }
+}
