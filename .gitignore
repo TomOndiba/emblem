@@ -1,9 +1,4 @@
-
 *.scssc
-
-*.scss
-
-*/sass/*
 
 */.sass-cache/*
 
