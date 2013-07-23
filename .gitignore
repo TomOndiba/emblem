@@ -44,3 +44,13 @@ application/config/config.php
 *.scssc
 
 .DS_Store
+
+js/router.js
+
+js/load.js
+
+application/views/home.php
+
+application/config/database.php
+
+application/config/database.php
