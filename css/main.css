@@ -8285,14 +8285,795 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     overflow: visible !important;
   }
 }
-/* line 7, ../sass/main.scss */
+/* line 11, ../sass/main.scss */
+#header,
+.header {
+  background: #000;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 50px;
+}
+
+/* line 23, ../sass/main.scss */
+#header a,
+.header a {
+  background: center center no-repeat transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNpi/P//PwOtARMDHQBdLGFBYt+nkR2KjEhxQqvIYaR7cD2glSWMo0mY3DiJo5Edi4ZPEqZ7nMSP5pPRon60qB9NwpQDgAADAMIxHUJvWs/TAAAAAElFTkSuQmCC);
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+/* line 36, ../sass/main.scss */
+#header a.friends,
+.header a.friends {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVNJREFUeNq01jFLAzEYxvH2UBCxiIiDUhzcdXCyIk5ufgUXLR37JdxcXBxcuwmOOtml0EKpo04iWIpIQREVEVFLjf9AhoC9e3O5uxd+lMLdPU1yedO8UiqXdQWO122ghi4+8IwGqiiId+uRCHbxqsLrFHNRz5ACSnhTch1EPScQpnIH0w7TWcGiz5rouS45rtkMVnxCJrAQ4yUq+oT8YhAjZOAT8oWHGCE9nxC9H64cA15w4xOiW0HbfErVNhvUa8c3cecQcoZv3xA9z+fCNbe4SNq7jvEUMaUnuE/au7SjkHbSR1G637ULh73Kn+gn7cIBttELGckQh9Jo8iMOrSksYx2b2MKk8FuvUUcHl/9GbiWuooYu3pVf/eARLZQxbp8na2YR0659e+HLmM/geN+z98lSRv8hZu2QQkYh+kzKjZkvHdPahymH6DNp5Cucev0JMAAkKj0NEoYBJwAAAABJRU5ErkJggg==);
+}
+
+/* line 40, ../sass/main.scss */
+#header a.right,
+.header a.right {
+  left: auto;
+  right: 10px;
+}
+
+/* line 46, ../sass/main.scss */
+#content,
+.content {
+  padding: 20px;
+}
+
+/*
+	Animations
+*/
+/* line 57, ../sass/main.scss */
+html.mm-opened .mm-page,
+html.mm-opened #mm-blocker,
+.mm-menu.mm-horizontal ul {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 69, ../sass/main.scss */
+html.mm-dragging.mm-opened .mm-page {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/* line 77, ../sass/main.scss */
+html.mm-opened .mm-page,
+html.mm-opened #mm-blocker {
+  -webkit-transition-property: top, right, bottom, left, margin, border-color;
+  -moz-transition-property: top, right, bottom, left, margin, border-color;
+  -o-transition-property: top, right, bottom, left, margin, border-color;
+  transition-property: top, right, bottom, left, margin, border-color;
+}
+
+/* line 84, ../sass/main.scss */
+.mm-menu.mm-horizontal ul {
+  -webkit-transition-property: margin-left;
+  -moz-transition-property: margin-left;
+  -o-transition-property: margin-left;
+  transition-property: margin-left;
+}
+
+/* line 93, ../sass/main.scss */
+html.mm-accelerated.mm-opening .mm-page,
+html.mm-accelerated.mm-opening #mm-blocker,
+html.mm-accelerated.mm-opening .mm-menu.mm-horizontal ul {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* top */
+/* line 103, ../sass/main.scss */
+html.mm-top.mm-opened .mm-page,
+html.mm-top.mm-opened #mm-blocker {
+  margin-top: 0px;
+  top: 0%;
+  left: 0;
+}
+
+/* line 110, ../sass/main.scss */
+html.mm-top.mm-opening .mm-page,
+html.mm-top.mm-opening #mm-blocker {
+  margin-top: -65px;
+  top: 100%;
+}
+
+/* right */
+/* line 118, ../sass/main.scss */
+html.mm-right.mm-opened .mm-page,
+html.mm-right.mm-opened #mm-blocker {
+  margin-right: 0px;
+  right: 0%;
+  top: 0;
+}
+
+/* line 125, ../sass/main.scss */
+html.mm-right.mm-opening .mm-page,
+html.mm-right.mm-opening #mm-blocker {
+  margin-right: -65px;
+  right: 100%;
+}
+
+/* bottom */
+/* line 133, ../sass/main.scss */
+html.mm-bottom.mm-opened .mm-page,
+html.mm-bottom.mm-opened #mm-blocker {
+  margin-bottom: 0px;
+  bottom: 0%;
+  left: 0;
+}
+
+/* line 140, ../sass/main.scss */
+html.mm-bottom.mm-opening .mm-page,
+html.mm-bottom.mm-opening #mm-blocker {
+  margin-bottom: -65px;
+  bottom: 100%;
+}
+
+/* left */
+/* line 148, ../sass/main.scss */
+html.mm-left.mm-opened .mm-page,
+html.mm-left.mm-opened #mm-blocker {
+  margin-left: 0px;
+  left: 0%;
+  top: 0;
+}
+
+/* line 155, ../sass/main.scss */
+html.mm-left.mm-opening .mm-page,
+html.mm-left.mm-opening #mm-blocker {
+  margin-left: -65px;
+  left: 100%;
+}
+
+/*
+	Menu, submenus, items
+	- Sizing and positioning
+*/
+/* line 170, ../sass/main.scss */
+html.mm-opened .mm-page,
+.mm-menu,
+.mm-menu ul,
+.mm-menu div.mm-search,
+.mm-menu div.mm-search input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* html/body */
+/* line 180, ../sass/main.scss */
+html.mm-opened,
+html.mm-opened body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 186, ../sass/main.scss */
+html.mm-opened body {
+  position: relative;
+}
+
+/* menu */
+/* line 192, ../sass/main.scss */
+.mm-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* line 202, ../sass/main.scss */
+.mm-menu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 208, ../sass/main.scss */
+.mm-menu.mm-opened {
+  display: block;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 216, ../sass/main.scss */
+.mm-menu.mm-opened ~ .mm-menu.mm-opened {
+  display: none;
+}
+
+/* line 220, ../sass/main.scss */
+.mm-menu.mm-top > ul {
+  padding-bottom: 105px;
+}
+
+/* line 224, ../sass/main.scss */
+.mm-menu.mm-right {
+  padding-left: 65px;
+}
+
+/* line 228, ../sass/main.scss */
+.mm-menu.mm-bottom {
+  padding-top: 65px;
+}
+
+/* line 232, ../sass/main.scss */
+.mm-menu.mm-left {
+  padding-right: 65px;
+}
+
+/* ul/li */
+/* line 239, ../sass/main.scss */
+.mm-menu ul,
+.mm-menu li {
+  list-style: none;
+}
+
+/* line 243, ../sass/main.scss */
+.mm-menu li {
+  position: relative;
+}
+
+/* line 247, ../sass/main.scss */
+.mm-menu li:after {
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+/* line 256, ../sass/main.scss */
+.mm-menu ul,
+.mm-menu li,
+.mm-menu li > a,
+.mm-menu li > span {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 262, ../sass/main.scss */
+.mm-menu a {
+  background: transparent;
+}
+
+/* line 266, ../sass/main.scss */
+.mm-menu > ul {
+  background: inherit;
+  width: 100%;
+  padding: 20px 0 40px 0;
+}
+
+/* items */
+/* line 275, ../sass/main.scss */
+.mm-menu li > a,
+.mm-menu li > span {
+  text-indent: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40px;
+  overflow: hidden;
+  padding-right: 5px;
+}
+
+/* line 284, ../sass/main.scss */
+.mm-menu a:active {
+  background: none;
+}
+
+/* subopen/close */
+/* line 290, ../sass/main.scss */
+.mm-menu a.mm-subopen {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* line 300, ../sass/main.scss */
+.mm-menu a.mm-subopen:before {
+  content: '';
+  display: block;
+  height: 100%;
+}
+
+/* line 306, ../sass/main.scss */
+.mm-menu a.mm-subopen.mm-fullsubopen {
+  border-left: none;
+  width: 100%;
+}
+
+/* line 311, ../sass/main.scss */
+.mm-menu a.mm-subopen.mm-fullsubopen:before {
+  border-left: none;
+}
+
+/* line 315, ../sass/main.scss */
+.mm-menu a.mm-subclose {
+  text-indent: 40px;
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+/* line 322, ../sass/main.scss */
+.mm-menu a.mm-subopen + a,
+.mm-menu a.mm-subopen + span {
+  padding-right: 45px;
+}
+
+/* page + blocker */
+/* line 328, ../sass/main.scss */
+html.mm-opened .mm-page {
+  background: inherit;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 335, ../sass/main.scss */
+#mm-blocker {
+  background: #fff;
+  opacity: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+}
+
+/* line 346, ../sass/main.scss */
+html.mm-opened #mm-blocker,
+html.mm-blocking #mm-blocker {
+  display: block;
+}
+
+/* vertical submenu */
+/* line 352, ../sass/main.scss */
+.mm-menu.mm-vertical ul ul {
+  display: none;
+  padding: 10px 0 10px 10px;
+}
+
+/* line 357, ../sass/main.scss */
+.mm-menu.mm-vertical li.mm-opened > ul {
+  display: block;
+}
+
+/* line 362, ../sass/main.scss */
+.mm-menu.mm-vertical ul ul li:last-child,
+.mm-menu.mm-vertical ul ul li:last-child:after {
+  border-bottom-width: 0;
+}
+
+/* line 367, ../sass/main.scss */
+.mm-menu.mm-vertical li.mm-opened.mm-selected > a.mm-subopen + a,
+.mm-menu.mm-vertical li.mm-opened.mm-selected > a.mm-subopen + span {
+  padding-right: 5px;
+  margin-right: 40px;
+}
+
+/* line 373, ../sass/main.scss */
+.mm-menu.mm-vertical li.mm-opened.mm-selected > em.mm-counter + a.mm-subopen + a,
+.mm-menu.mm-vertical li.mm-opened.mm-selected > em.mm-counter + a.mm-subopen + span {
+  margin-right: 75px;
+}
+
+/* horizontal submenu */
+/* line 379, ../sass/main.scss */
+.mm-menu.mm-horizontal {
+  white-space: nowrap;
+}
+
+/* line 383, ../sass/main.scss */
+.mm-menu.mm-horizontal ul {
+  vertical-align: top;
+  margin-left: 0%;
+}
+
+/* line 388, ../sass/main.scss */
+.mm-menu.mm-horizontal ul.mm-submenu {
+  display: none;
+}
+
+/* line 393, ../sass/main.scss */
+.mm-menu.mm-horizontal ul,
+.mm-menu.mm-horizontal ul.mm-submenu.mm-opened {
+  display: inline-block;
+}
+
+/* line 397, ../sass/main.scss */
+.mm-menu.mm-horizontal ul.mm-subopening {
+  margin-left: -100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*
+	Menu, submenus, items
+	- Styling (default: dark background)
+*/
+/* line 409, ../sass/main.scss */
+.mm-menu {
+  background: #000;
+}
+
+/* line 413, ../sass/main.scss */
+.mm-menu * {
+  -webkit-text-size-adjust: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* line 420, ../sass/main.scss */
+.mm-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 424, ../sass/main.scss */
+.mm-menu li:after {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* line 431, ../sass/main.scss */
+.mm-menu li,
+.mm-menu li > a,
+.mm-menu li > span {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 437, ../sass/main.scss */
+.mm-menu li.mm-selected > a,
+.mm-menu li.mm-selected > span {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 441, ../sass/main.scss */
+.mm-menu li.mm-selected > a.mm-subopen {
+  background: transparent;
+}
+
+/* subopen/close */
+/* line 447, ../sass/main.scss */
+.mm-menu a.mm-subopen {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 451, ../sass/main.scss */
+.mm-menu a.mm-subopen:before {
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* line 455, ../sass/main.scss */
+.mm-menu a.mm-subclose {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* vertical submenu */
+/* line 462, ../sass/main.scss */
+.mm-menu.mm-vertical li.mm-opened > a.mm-subopen,
+.mm-menu.mm-vertical li.mm-opened > ul {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* page + blocker */
+/* line 468, ../sass/main.scss */
+html.mm-opened .mm-page {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/*
+	Labels
+	- Sizing and positioning
+*/
+/* line 478, ../sass/main.scss */
+.mm-menu li.mm-label {
+  text-transform: uppercase;
+  text-indent: 20px;
+  line-height: 20px;
+}
+
+/*
+	Labels
+	- Styling
+*/
+/* line 490, ../sass/main.scss */
+.mm-menu li.mm-label {
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+	Counters
+	- Sizing and positioning
+*/
+/* line 502, ../sass/main.scss */
+.mm-menu em.mm-counter {
+  text-indent: 0;
+  text-align: center;
+  text-shadow: none;
+  line-height: 20px;
+  display: block;
+  min-width: 20px;
+  height: 20px;
+  padding: 0;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+/* line 516, ../sass/main.scss */
+.mm-menu em.mm-counter + a.mm-subopen {
+  padding-left: 35px;
+}
+
+/* line 521, ../sass/main.scss */
+.mm-menu em.mm-counter + a.mm-subopen + a,
+.mm-menu em.mm-counter + a.mm-subopen + span {
+  padding-right: 80px;
+}
+
+/* line 526, ../sass/main.scss */
+.mm-menu em.mm-counter + a.mm-fullsubopen + a,
+.mm-menu em.mm-counter + a.mm-fullsubopen + span {
+  padding-right: 70px;
+}
+
+/*
+	Counters
+	- Styling
+*/
+/* line 536, ../sass/main.scss */
+.mm-menu em.mm-counter {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*
+	Arrows
+	- Sizing and positioning
+*/
+/* line 553, ../sass/main.scss */
+.mm-menu a.mm-subopen:after,
+.mm-menu a.mm-subclose:before {
+  content: '';
+  border-width: 4px;
+  border-style: solid;
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 568, ../sass/main.scss */
+.mm-menu a.mm-subopen:after {
+  border-top: none;
+  border-left: none;
+  right: 16px;
+  top: 16px;
+}
+
+/* line 575, ../sass/main.scss */
+.mm-menu a.mm-subclose:before {
+  border-right: none;
+  border-bottom: none;
+  left: 20px;
+  top: 35px;
+}
+
+/* line 582, ../sass/main.scss */
+.mm-menu.mm-vertical li.mm-opened > a.mm-subopen:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*
+	Arrows
+	- Styling
+*/
+/* line 596, ../sass/main.scss */
+.mm-menu a.mm-subopen:after,
+.mm-menu a.mm-subclose:before {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/*
+	Search
+	- Sizing and positioning
+*/
+/* line 606, ../sass/main.scss */
+.mm-menu div.mm-search {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 615, ../sass/main.scss */
+.mm-menu div.mm-search input {
+  border: none;
+  border-radius: 15px;
+  line-height: 30px;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+/* line 627, ../sass/main.scss */
+.mm-menu li.mm-noresults {
+  border: none;
+  display: none;
+  padding-top: 30px;
+}
+
+/* line 633, ../sass/main.scss */
+.mm-menu li.mm-noresults:after {
+  border: none;
+}
+
+/* line 637, ../sass/main.scss */
+.mm-menu.mm-noresults li.mm-noresults {
+  display: block;
+}
+
+/* line 644, ../sass/main.scss */
+.mm-menu .mm-noresult,
+.mm-menu .mm-nosubresult > a.mm-subopen,
+.mm-menu .mm-nosubresult > em.mm-counter {
+  display: none;
+}
+
+/* line 649, ../sass/main.scss */
+.mm-menu .mm-nosubresult > a.mm-subopen + a,
+.mm-menu .mm-nosubresult > a.mm-subopen + span {
+  padding-right: 5px;
+}
+
+/*
+	Search
+	- Styling
+*/
+/* line 659, ../sass/main.scss */
+.mm-menu div.mm-search {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 664, ../sass/main.scss */
+.mm-menu div.mm-search input {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 669, ../sass/main.scss */
+.mm-menu li.mm-noresults {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+/*
+	Bugfix for browsers without support for overflowscrolling
+		- Android < 3
+*/
+/* line 681, ../sass/main.scss */
+html.mm-no-overflowscrolling.mm-opened,
+html.mm-no-overflowscrolling.mm-opened body {
+  overflow: visible;
+}
+
+/* line 685, ../sass/main.scss */
+html.mm-no-overflowscrolling.mm-opened body {
+  overflow-x: hidden;
+}
+
+/* line 689, ../sass/main.scss */
+html.mm-no-overflowscrolling.mm-opened .mm-page {
+  min-height: 200%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+/* line 696, ../sass/main.scss */
+html.mm-no-overflowscrolling .mm-menu {
+  height: auto;
+  min-height: 100%;
+  overflow: default;
+  overflow-x: default;
+  overflow-y: default;
+  position: relative;
+  left: auto;
+  top: auto;
+}
+
+/* line 707, ../sass/main.scss */
+html.mm-no-overflowscrolling.mm-right .mm-menu {
+  position: absolute;
+}
+
+/*
+	Sizing and positioning for larger screens
+*/
+@media all and (min-width: 500px) {
+  /* line 718, ../sass/main.scss */
+  .mm-menu.mm-right {
+    left: auto;
+    right: 0;
+  }
+
+  /* line 724, ../sass/main.scss */
+  .mm-menu.mm-left,
+  .mm-menu.mm-right {
+    width: 500px;
+  }
+
+  /* line 730, ../sass/main.scss */
+  html.mm-left.mm-opening .mm-page,
+  html.mm-left.mm-opening #mm-blocker {
+    left: 500px;
+  }
+
+  /* line 735, ../sass/main.scss */
+  html.mm-right.mm-opening .mm-page,
+  html.mm-right.mm-opening #mm-blocker {
+    right: 500px;
+  }
+}
+/* line 742, ../sass/main.scss */
 .mainNav {
   list-style: none;
   background: transparent url(../img/logoSmall.png) no-repeat center center;
   height: 70px;
 }
 
-/* line 13, ../sass/main.scss */
+/* line 748, ../sass/main.scss */
 .subNav {
   text-align: center;
   list-style: none;
@@ -8303,7 +9084,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   padding: 10px 0;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 756, ../sass/main.scss */
 .mainNav li {
   display: inline-block;
   margin-right: 12px;
@@ -8311,36 +9092,41 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   position: relative;
 }
 
-/* line 28, ../sass/main.scss */
+/* line 763, ../sass/main.scss */
 .subNav li {
   margin-right: 12px;
   display: inline-block;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 768, ../sass/main.scss */
 .mainNav li a {
   color: #000;
   text-transform: uppercase;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 773, ../sass/main.scss */
 .subNav li a {
   color: #000;
 }
 
-/* line 42, ../sass/main.scss */
-a:hover {
+/* line 777, ../sass/main.scss */
+a:hover, .firstLevel:hover, .mm-subopen:hover {
   color: #b4b5e3 !important;
   text-decoration: none;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 782, ../sass/main.scss */
+.firstLevel {
+  text-transform: uppercase;
+}
+
+/* line 786, ../sass/main.scss */
 .vCenter {
   display: inline-table;
   height: 100%;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 791, ../sass/main.scss */
 .vCenterKid {
   display: table-cell;
   vertical-align: middle;
@@ -8348,14 +9134,33 @@ a:hover {
   width: 100%;
 }
 
-/* line 59, ../sass/main.scss */
+/* line 798, ../sass/main.scss */
 ul {
   margin: 0;
 }
 
+/* line 802, ../sass/main.scss */
+.logoPurple {
+  display: inline-block;
+  width: 35px;
+  height: 22px;
+  background: transparent url(../img/logoPurple.png) no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  right: 20px;
+  text-indent: -10000px;
+}
+
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 65, ../sass/main.scss */
+  /* line 815, ../sass/main.scss */
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 821, ../sass/main.scss */
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

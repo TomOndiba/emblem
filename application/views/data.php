@@ -8,6 +8,48 @@ var data = {
 	navigation:{
 		hotel: {
 			title: 'hotel',
+			subpages:{
+				about: {
+					title: 'about',
+					page: 'hotel',
+					text: {
+						en: 'About the Emblem',
+						cz: 'About the Emblem'
+					}		
+				},
+				rooms: {
+					title: 'rooms',
+					page: 'hotel',
+					text: {
+						en: 'Rooms and suites',
+						cz: 'Rooms and suites'
+					}
+				},
+				events: {
+					title: 'events',
+					page: 'hotel',
+					text: {
+						en: 'Events',
+						cz: 'Events'
+					}
+				},
+				location: {
+					title: 'location',
+					page: 'hotel',
+					text: {
+						en: 'Location',
+						cz: 'Location'
+					}
+				},
+				gallery: {
+					title: 'gallery',
+					page: 'hotel',
+					text: {
+						en: 'Photo Gallery',
+						cz: 'Photo Gallery'
+					}
+				}		
+			},
 			text: {
 				en: 'hotel',
 				cz: 'hotel'

@@ -3,6 +3,14 @@
 
 %BeginFont
 Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:\.DS_Store
+FileLength:6148
+FileModTime:1374517249
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
 FontType:Type1
 FontName:ApercuPro-LightItalic
 FamilyName:Apercu Pro

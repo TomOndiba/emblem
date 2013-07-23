@@ -29,7 +29,7 @@ require.config({
         'pxloadervideo': 'libs/pxloadervideo',
         'imgLiquid': "libs/imgLiquid-min",
         'backstretch': "libs/jquery.backstretch",
-        'fittext': "libs/fittext",
+        'mmenu': "libs/jquery.mmenu.min"
     },
     shim: {
         bootstrap: {
