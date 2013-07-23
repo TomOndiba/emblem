@@ -40,7 +40,6 @@ define(['jquery', 'backbone', 'handlebars', 'mmenu'], function($, Backbone) {
 	    	//register menu controls
 	    	Handlebars.registerHelper('language', function() { return myApp.page.lang });	
 	    	
-	    	alert(myApp.page.width);
 	    	//handle resize
 			$(window).on('resize', function(){
 				if(myApp.page.width>768){
