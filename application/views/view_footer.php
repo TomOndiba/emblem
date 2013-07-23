@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container hidden-phone">
 	
 	<div id="footer-wrapper" class="wrapper">
 		
@@ -60,6 +60,6 @@
 
 		<div class="clearfix"></div>
 
-	</div>
+	</div>	
 	
 </div>

@@ -8,6 +8,11 @@ define(['jquery', 'backbone', 'handlebars', 'mmenu'], function($, Backbone) {
 	//Navigation View
 	var Navigation = Backbone.View.extend({
 		el: $("#navigation"),
+		events: {
+	        'click .openSub' : 'openSub',
+	        'mouseenter #page' : 'closeSub',		
+	    },  
+
 		//model: data.navigation,
 		    	    	    		
 		render: function(){
@@ -20,6 +25,14 @@ define(['jquery', 'backbone', 'handlebars', 'mmenu'], function($, Backbone) {
 				slidingSubmenus: false
 			});   
 			
+	    },
+	    
+	    openSub: function(){
+	    	TweenMax.to($(".subNav"), 0.4, { y: 0 });		    
+	    },
+	    
+	    closeSub: function(){
+	    	TweenMax.to($(".subNav"), 0.4, { y: '-41px' });		    
 	    },
 	    
 	    renderSubnav: function(){
@@ -39,7 +52,7 @@ define(['jquery', 'backbone', 'handlebars', 'mmenu'], function($, Backbone) {
 	    	self.subtemplate = Handlebars.compile(myApp.pages.menu.subtemplate);
 	    	//register menu controls
 	    	Handlebars.registerHelper('language', function() { return myApp.page.lang });	
-	    	
+
 	    	//handle resize
 			$(window).on('resize', function(){
 				if(myApp.page.width>768){

@@ -5,7 +5,7 @@ Author: Filip Arneric
 */
 require.config({
 	urlArgs: "noCache=" + (new Date).getTime(),
-    baseUrl: 'http://localhost/~svemirko/emblem/js/',
+    baseUrl: 'http://localhost/~filip/emblem/js/',
     waitSeconds: 120,
     dir: "../webapp-build",
     paths: {
@@ -63,6 +63,9 @@ require.config({
             deps: ['jquery']
         },
   
+        mmenu: {
+            deps: ['jquery']
+        },
 
         fittext: {
             deps: ['jquery']
@@ -86,7 +89,7 @@ require([
 	"text!../view_subnav", 
 	"text!../view_home", 
 	"text!../view_footer", 
-	"noext!http://localhost/~svemirko/emblem/data",
+	"noext!http://localhost/~filip/emblem/data",
 	"bootstrap",
 	"script", 
 	"modernizr",

@@ -23,12 +23,15 @@
 </div>	
 
 <div class='hidden-phone'>
-	<div class='container hidden-phone'>
-		<ul class='mainNav'>
-		 {{#each mainNav}}   
-		 	<li><a class="link" href="<?php echo base_url('{{language}}/{{this.title}}') ?>">{{this.title}}</a></li>
-		 {{/each}}
-		</ul>	
+
+	<div class='bgWhite'>
+		<div class='container hidden-phone'>
+			<ul class='mainNav'>
+			 {{#each mainNav}}   
+			 	<li><a class="openSub" href="#">{{this.title}}</a></li>
+			 {{/each}}
+			</ul>	
+		</div>
 	</div>
 	
 	<div class='subNav'>
@@ -42,4 +45,5 @@
 		  {{/each}}
 		</div>
 	</div>
+	
 </div>

@@ -38,3 +38,9 @@ application/views/.DS_Store
 Emblem.Website/.DS_Store
 
 Emblem.Website/.DS_Store
+
+application/config/config.php
+
+*.scssc
+
+.DS_Store
