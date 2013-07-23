@@ -24,3 +24,17 @@ application/config/database.php
 application/views/.DS_Store
 
 .sass-cache/47bc3e79e5cf428e640b160a6ff691ab3903ebe8/_css3.scssc
+
+.htaccess
+
+.sass-cache/47bc3e79e5cf428e640b160a6ff691ab3903ebe8/_css3.scssc
+
+.sass-cache/47bc3e79e5cf428e640b160a6ff691ab3903ebe8/_css3.scssc
+
+*.scssc
+
+.DS_Store
+
+Emblem.Website/.DS_Store
+
+Emblem.Website/.DS_Store
