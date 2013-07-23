@@ -1,14 +1,12 @@
 /*
-Dreamhouse Page
-Copyright Kitchen S.R.O. May 2013. 
+Emblem Page
 Author: Filip Arneric
 */
 
-define(['jquery', 'backbone', 'handlebars', 'royalslider', 'imgLiquid', 'backstretch', 'fittext'], function($, Backbone) {
+define(['jquery', 'backbone', 'handlebars', 'royalslider', 'imgLiquid', 'backstretch'], function($, Backbone) {
 
 	var Page = Backbone.View.extend({
 			el: '#main',
-			imgSeq: '#imgSeq',
 			firstInit: true,
 			scripts: {		
 					
@@ -70,8 +68,9 @@ define(['jquery', 'backbone', 'handlebars', 'royalslider', 'imgLiquid', 'backstr
 			
 			initialize: function(){
 				var self = this;		
-				
+							
 				_.bindAll(this, 'render');
+				self.width = $(window).width();
 				
 				Handlebars.registerHelper('menuText', function(items) {
 				  var text = self.lang == 'cz' ? items.text.cz : items.text.en;

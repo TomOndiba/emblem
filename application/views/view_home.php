@@ -1,1 +1,1 @@
-<h1 class='visible-desktop' id='logo'>Emblem</h1>
+<h1 id='logo'>Emblem</h1>
