@@ -40,11 +40,15 @@ Filip Arneric
 		<div id='navigation'></div>
 		
 		<!-- main -->
-		<div id="main" class="<?php echo $page; ?>"></div>
+		<div id="main" class="<?php echo $page; ?>">
+			<div id='page'></div>
+			<div id='slideshow'></div>
+		</div>
 
-        <footer id="footer" class="footer down"></footer>
-		
-        <script data-main="/~svemirko/emblem/js/load" src="<?php echo base_url('js/vendor/require.js')?>"></script>	
+        <footer id="footer" class="footer down hidden-phone"></footer>
+		<div class="copy visible-phone">All post content &copy; of the owners.</div>
+			
+        <script data-main="/~filip/emblem/js/load" src="<?php echo base_url('js/vendor/require.js')?>"></script>	
         
         
         <script>

@@ -38,7 +38,7 @@ define(['jquery', 'backbone'], function($, Backbone) {
 	    initialize: function(){
 		   var self = this;
 		   Backbone.history = Backbone.history || new Backbone.History({});
-		   var root = "~svemirko/emblem/";
+		   var root = "~filip/emblem/";
 		   var enablePushState = true;
 		   var pushState = !! (enablePushState && window.history && window.history.pushState);
 	       Backbone.history.start({

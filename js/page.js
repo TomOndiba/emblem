@@ -59,9 +59,16 @@ define(['jquery', 'backbone', 'handlebars', 'royalslider', 'imgLiquid', 'backstr
 		   		var template = Handlebars.compile(window.myApp.pages[self.activepage]['template']);	
 		   		
 		   		self.template = template({ data: self.model, lang:self.lang, page:self.mainPage, subpage:self.param, model:model });		
-		   		self.$el.html(self.template).removeClass().addClass(self.activepage);  			 	
+		   		self.$("#page").html(self.template).removeClass().addClass(self.activepage);  			 	
 				//init scripts
-			 	self.scripts[window.myApp.pages[self.activepage].scripts]();			
+			 	self.scripts[window.myApp.pages[self.activepage].scripts]();		
+			 	
+			 	if(self.firstInit){
+				 	self.$("#slideshow").backstretch([
+					    absurl+"/img/home/hotel1.jpg",
+					    absurl+"/img/home/hotel2.jpg"  
+					], {duration: 4000, fade: 800});
+			 	}	
 
 			},
 

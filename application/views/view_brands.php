@@ -42,7 +42,9 @@
 	   <div class="span3 box">
 	   	  <div id='slideshow{{this.id}}' style='height:{{boxHeight}}' class='slideshow resizible' data-bg='<?php echo base_url('img/{{activePage}}/{{this.folder}}/thumbs/{{this.src}}') ?>,'></div>
 		  <a href='<?php echo base_url('{{language}}/{{activePage}}/{{this.folder}}/preview#image-{{this.order}}') ?>' class='hoverBox transition link'>
-		  	<canvas class='hoverCanvas {{rotate}}' id='canvas{{this.id}}'></canvas>
+		  	<section class='canvasHolder'>
+				<canvas class='hoverCanvas' id='canvas{{this.id}}'></canvas>
+			</section>	
 		  	<div class='vCenter'>
 			  	<div class='vCenterKid'>
 				  	 <h4>{{this.title}}</h4>
@@ -56,7 +58,9 @@
 	<div class="span3 box">
 		  <div id='slideshow{{this.id}}' style='height:{{boxHeight}}' class='slideshow resizible' data-bg='{{#each thumbs}}<?php echo base_url('img/{{activePage}}/{{this.folder}}/{{this.src}}') ?>,{{/each}}'></div>
 	  <a href='<?php echo base_url('{{language}}/{{activePage}}/{{this.folder}}') ?>' target="_blank" class='hoverBox transition link'>
-	  	<canvas class='hoverCanvas {{rotate}}' id='canvas{{this.id}}'></canvas>
+	  	<section class='canvasHolder'>
+			<canvas class='hoverCanvas' id='canvas{{this.id}}'></canvas>
+		</section>	
 	  	<div class='vCenter'>
 		  	<div class='vCenterKid'>
 			  	 <h4>{{this.brand}}</h4>
