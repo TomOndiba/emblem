@@ -16,15 +16,17 @@ define(['jquery', 'backbone'], function($, Backbone) {
 	    events: {
 	        'click .link' : 'changeRoute',
 	        'click .lang' : 'changeLang',
-	        'click' : 'showMenu',
-	        'mousemove' : 'showMenu',
-	        'click .shareBtn' : 'openShare',
-	        'click .fb' : 'fbLike',
-	        'mouseover .navbar': 'menuIn',	 
-	        'mouseleave .navbar': 'menuOut',       
-	        'mouseover .hoverBox': 'drawSeq',
-			'mouseleave .hoverBox': 'eraseSeq'			
+	        'click .openSub' : 'openSub',
+	        'mouseenter #main' : 'closeSub'	
 	    },  
+	    
+	    openSub: function(){
+	    	TweenMax.to($(".subNav"), 0.4, { y: 0 });	    
+	    },
+	    
+	    closeSub: function(){	
+	    	TweenMax.to($(".subNav"), 0.4, { y: '-40px' });		    
+	    },
 	    	    	
 	    changeRoute: function(e) {
 	        e.preventDefault();

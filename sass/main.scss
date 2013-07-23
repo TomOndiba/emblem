@@ -746,11 +746,42 @@ html.mm-no-overflowscrolling.mm-right .mm-menu
 	height:70px;
 }
 
+#header .langs{
+	margin-right: 20px;
+}
+
+#header .langs li{
+	margin:0!important;
+}
+
+#header .langs li a{
+	background: none!important;
+	position: relative;
+	color: #fff;
+	width: auto;
+	margin-right: 5px;
+}
+
+.langs {
+	list-style: none;
+	display: inline-block;
+	float: right;
+}
+
+.langs li {
+	margin-right: 5px!important;
+	display: inline-block;
+}
+
+.langs li a{
+	color: #000;	
+}
+
 .subNav{
 	text-align: center;
 	list-style: none;
 	background: white;
-	@include box-shadow(#c1c1c1 0 0 4px); 
+	@include box-shadow(inset #c1c1c1 0 0 4px); 
 	padding:10px 0;
 	z-index: 1;
 	position: absolute;
@@ -1021,6 +1052,16 @@ html, body {
 	top:0;
 	left:0;
 	z-index: -1;
+}
+
+.mm-page{
+	height: 100%;
+}
+
+#main.home {
+	@include calc(height, "100% - 135px");
+	position: relative;
+	background: transparent url(../img/logoBig.png) no-repeat center center;
 }
 
 /*

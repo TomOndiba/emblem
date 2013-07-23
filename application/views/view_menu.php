@@ -2,6 +2,13 @@
 	<div id="header">
 		<a href="#menu"></a>
 		<h2 class='logoPurple'>Emblem</h2>	
+		
+		<ul class='langs'>
+			<li><a href='#'>EN</a></li>
+			<li><a href='#'>CZ</a></li>
+			<li><a href='#'>RU</a></li>
+		</ul>
+		
 	</div>
 
 	<nav id="menu">
@@ -30,7 +37,13 @@
 			 {{#each mainNav}}   
 			 	<li><a class="openSub" href="#">{{this.title}}</a></li>
 			 {{/each}}
+				 <ul class='langs'>
+					<li><a href='#'>EN</a></li>
+					<li><a href='#'>CZ</a></li>
+					<li><a href='#'>RU</a></li>
+				</ul>
 			</ul>	
+			
 		</div>
 	</div>
 	
