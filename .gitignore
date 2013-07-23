@@ -3,3 +3,24 @@
 */.sass-cache/*
 
 */application/config/*
+
+*.htaccess
+
+*.DS_Store
+
+Emblem.Website/.DS_Store
+
+Emblem.Website/0.4/.DS_Store
+
+Emblem.Website/0.4/Emblem.Website.0.4/.DS_Store
+
+application/config/config.php
+
+application/config/database.php
+
+.DS_Store
+.sass-cache/47bc3e79e5cf428e640b160a6ff691ab3903ebe8/_css3.scssc
+
+application/views/.DS_Store
+
+.sass-cache/47bc3e79e5cf428e640b160a6ff691ab3903ebe8/_css3.scssc

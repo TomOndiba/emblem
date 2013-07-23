@@ -5,7 +5,7 @@ Author: Filip Arneric
 */
 require.config({
 	urlArgs: "noCache=" + (new Date).getTime(),
-    baseUrl: 'http://localhost/~filip/emblem/js/',
+    baseUrl: 'http://localhost/~svemirko/emblem/js/',
     waitSeconds: 120,
     dir: "../webapp-build",
     paths: {
@@ -79,32 +79,39 @@ require.config({
 require([
 	"router", 
 	"page", 
-	"navigation", 
+	"navigation",
+	"footer",
 	"main", 
 	"text!../view_menu", 
 	"text!../view_subnav", 
 	"text!../view_home", 
-	"noext!http://localhost/~filip/emblem/data",
+	"text!../view_footer", 
+	"noext!http://localhost/~svemirko/emblem/data",
 	"bootstrap",
 	"script", 
 	"modernizr",
 	//"bird",
 	"tweenmax"
-	],function (Router, Page, Navigation, Main, menuTemplate, menusubTemplate, homeTemplate, aboutTemplate, newsTemplate, newsDetailTemplate, brandsTemplate, designersTemplate, designerPreviewTemplate, servicesTemplate, contactTemplate) { 
+	],function (Router, Page, Navigation, Footer, Main, menuTemplate, menusubTemplate, homeTemplate, footerTemplate, aboutTemplate, newsTemplate, newsDetailTemplate, brandsTemplate, designersTemplate, designerPreviewTemplate, servicesTemplate, contactTemplate) { 
 	
 	window.myApp = {
 		init: function(){
 			this.page = new Page(),
 			this.navigation = new Navigation(),
+			this.footer = new Footer(),
 			this.router = new Router(),
-			this.main = new Main()
+			this.main = new Main();
 		},
 		pages: {
 			menu: {
 				template: menuTemplate,
 				subtemplate: menusubTemplate
 			},
-			
+
+			footer: {
+				template: footerTemplate
+			},
+
 			home: {
 				template: homeTemplate,
 				collection: {
@@ -113,11 +120,10 @@ require([
 				},
 				scripts: 'homePage'
 			}
-						
-				
+
 		}
-	}	
-	
+	};
+
 	window.myApp.init();
 	
 })

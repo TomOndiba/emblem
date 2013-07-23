@@ -4,6 +4,8 @@
 @import "sass-bootstrap/responsive";
 @import "variables";
 
+$emblemColor: #b4b5e3 !default;
+
 .mainNav{
 	list-style: none;
 	background: transparent url(../img/logoSmall.png) no-repeat center center;
@@ -63,7 +65,178 @@ ul{
 //bootsrap fixes
 @media (max-width: 979px) and (min-width: 768px){
 	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-	width: 768px;
+		width: 768px;
+	}
+}
+
+//MIRKOVI STILOVI ZA FOOTER
+html, body {
+	height: 100%;
+	position: relative;
+}
+
+.footer {
+	width: 100%;
+	background-color: $black;
+	color: $white;
+	min-height: 68px;
+	padding: 28px 0 16px 0;
+	position: fixed;
+	left: 0;
+	top: 100%;
+	margin-top: -68px;
+	font-weight: 300;
+
+	.wrapper {
+		height: auto;
+		width: 100%;
+
+		section {
+			width: 50%;
+			float: left;
+			@include box-sizing(border-box);
+			font-size: 13px;
+		}
+
+		.the-rest {
+			opacity: 0;
+		}
+
+		.tweets-wrapper {
+			background: {
+				image: image-url("tweet_bird.png");
+				repeat: no-repeat;
+				position: top left;
+			};
+			padding-left: 35px;
+			margin-left: -35px;
+
+			p {
+				line-height: 15px;
+				font-size: 13px;
+				margin-bottom: 15px;
+			}
+		}
+
+		.info-wrapper {
+			padding-left: 88px;
+
+			.sign-in {
+				text-decoration: underline;
+				color: $white;
+			}
+
+			.logo-purple {
+				background: {
+					image: image-url("logoPurple.png");
+					repeat: no-repeat;
+					position: 0 5px;
+				};
+				padding-left: 88px;
+				margin-left: -88px;
+			}
+
+			.socials {
+				display: inline-block;
+				margin-left: 45px;
+
+				a {
+					display: inline-block;
+					height: 15px;
+					line-height: 15px;
+					width: 14px;
+					margin-right: 6px;
+					text-indent: -999px;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+
+				.fb {
+					background: {
+						image: image-url("f.png");
+						repeat: no-repeat;
+						position: 0 1px;
+					};
+				}
+
+				.tw {
+					background: {
+						image: image-url("tw.png");
+						repeat: no-repeat;
+						position: 0 1px;
+					};
+				}
+
+				.pin {
+					background: {
+						image: image-url("p.png");
+						repeat: no-repeat;
+						position: 0 1px;
+					};
+				}
+
+				.vim {
+					background: {
+						image: image-url("v.png");
+						repeat: no-repeat;
+						position: 0 1px;
+					};
+				}
+
+				.rss {
+					background: {
+						image: image-url("r.png");
+						repeat: no-repeat;
+						position: 0 1px;
+					};
+					margin-left: 5px;
+				}
+			}
+
+			p {
+				color: $emblemColor;
+				font-size: 15px;
+				width: 100%;
+				margin: 0;
+			}
+
+			.footer-toggler {
+				color: $white;
+				margin-top: -6px;				
+
+				span.arrow {
+					display: inline-block;
+					width: 22px;
+					height: 22px;
+					background: {
+						image: image-url("arrow.png");
+						repeat: no-repeat;
+						position: top left; 
+					};
+				}
+			}
+		}
+	}
+
+	a {
+		color: $emblemColor;
+		line-height: 15px;
+
+		&:hover {
+			color: $white !important;
+		}
+	}
+
+	.copy {
+		width: 100%;
+		height: 15px;
+		line-height: 15px;
+		font-size: 13px;
+		color: #555;
+		text-align: center;
+		margin-top: 25px;
 	}
 }
 

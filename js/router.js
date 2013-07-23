@@ -30,14 +30,15 @@ define(['jquery', 'backbone'], function($, Backbone) {
 		   
 		   //render navigation on firstInit
 		   if (myApp.page.firstInit || langchange) { 
-	   	   		myApp.navigation.render(); //: window.myApp.navigation.renderSubnav();	
+	   	   		myApp.navigation.render(); //: window.myApp.navigation.renderSubnav();
+	   	   		myApp.footer.render();
 		   }
 		},
 		
 	    initialize: function(){
 		   var self = this;
 		   Backbone.history = Backbone.history || new Backbone.History({});
-		   var root = "~filip/emblem/";
+		   var root = "~svemirko/emblem/";
 		   var enablePushState = true;
 		   var pushState = !! (enablePushState && window.history && window.history.pushState);
 	       Backbone.history.start({

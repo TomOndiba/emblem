@@ -41,8 +41,10 @@ Filip Arneric
 		
 		<!-- main -->
 		<div id="main" class="<?php echo $page; ?>"></div>
+
+        <footer id="footer" class="footer down"></footer>
 		
-        <script data-main="/~filip/emblem/js/load" src="<?php echo base_url('js/vendor/require.js')?>"></script>	
+        <script data-main="/~svemirko/emblem/js/load" src="<?php echo base_url('js/vendor/require.js')?>"></script>	
         
         
         <script>
