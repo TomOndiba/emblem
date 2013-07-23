@@ -840,6 +840,10 @@ html, body {
 	top: 100%;
 	margin-top: -68px;
 	font-weight: 300;
+	-webkit-transform : translateZ(0); 
+	-o-transform : translateZ(0); 
+	-moz-transform : translateZ(0); 
+	transform : translateZ(0);
 
 	.wrapper {
 		height: auto;
